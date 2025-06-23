@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+ 
+}
+
+body {
+  background-color: #04144f;
+  padding: 0;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+
+}
+
+header {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(17, 0, 255);
+  padding: 5px 20px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; 
+}
+
+
+#carouselPromocional {
+  padding: 50px;
+  background: linear-gradient(0deg, #033B6A 0%, #000000 100%);
+  margin-top: 50px;
+  
+}
+
+
+
+section img {
+  width: 100%;
+  left: 3000px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.logo img {
+  height: 100px;
+  transition: transform 0.3s;
+  border-radius: 10px;
+
+}
+.logo:hover {
+  transform: scale(1.10);
+  }
+nav {
+  display: flex;
+  gap: 30px;
+  word-spacing: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(0, 85, 255);
+  transform: scale(1.25);
+  transition: transform 0.3s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.hero-banners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding:  0px;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  max-width: 2000px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+
+.produto {
+  width: 250px;
+  padding: 0px;
+  background:  #000222;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color:  #ffffff;
+  padding: 1px;
+  border-radius: 10px;
+  margin: 11px;
+
+}
+
+
+@media (max-width: 768px) {
+  .produto {
+    width: 90%;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+}
+
+
+
+
+.col-md-4 {
+background-color: rgb(0, 0, 0);
+  margin: 100px auto;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+
+
+.con {
+
+    background: linear-gradient(0deg, #000000 0%,  #033B6A  100%);
+
+}
+
+.con h6{
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.com img:hover {
+  transform: scale(1.05);
+}
+    
+.footer { 
+    background: linear-gradient(0deg, #000000 0%, #033B6A 100%);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 16px;
+
+}
+.final {
+  margin: 30px auto;
+
+}
+.marcas {
+  background: linear-gradient(0deg, #033B6A 0%, #000000 100%);
+}
+
+
+
+
+.marcas img {
+  max-height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.marcas img:hover {
+  transform: scale(1.05);
+
+}
+
+#carouselProdutos .carousel-item {
+
+  background-color: #033B6A;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+#carouselProdutos .carousel-item img {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#carouselProdutos .carousel-item h2 {
+  color: #636262;
+  font-size: 20px;
+}
+#carouselProdutos .carousel-item .preco {
+  color: #ff0000;
+  font-weight: bold;
+
+}
+
+.col-md-4  {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+}
+.col-md-4:hover {
+  transform: scale(1.05);
+
+}
+
+.icons { 
+    transition: 0,03s;
+  color: #ffffff;
+}
+.icons :hover {
+    color: #003fcc;
+}
+@media (max-width: 768px) {
+  .produto {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .d-flex.justify-content-center.gap-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #carouselPromocional {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .final {
+    font-size: 14px;
+  }
+
+  .con h6 {
+    font-size: 18px;
+  }
+
+  .banner img {
+    max-width: 100%;
+  }
+
+  .col-md-4 {
+    margin: 30px auto;
+    width: 90%;
+  }
+}

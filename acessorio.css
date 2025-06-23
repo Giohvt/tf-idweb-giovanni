@@ -1,0 +1,178 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(17, 0, 255);
+  padding: 5px 20px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; 
+}
+
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+ background-color: #000000;
+  padding: 20px;
+}
+
+
+nav {
+  display: flex;
+  gap: 30px;
+  word-spacing: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(0, 85, 255);
+  transform: scale(1.25);
+  transition: transform 0.3s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background: linear-gradient(0deg, #011b31 0%, #000000 100%);
+  margin: 80px 0 0 0;
+}
+.produto {
+  width: 400px;
+  padding:  1px;
+  background: #000000;
+  text-align: center;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.produto img {
+  flex: 1;
+  border-radius: 8px;
+  padding: 0px;
+  max-width: 400px;
+  width: 500px;
+}
+
+.produto h2 {
+  color: #353535;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.preco {
+  color: #f70404;
+  font-weight: bold;
+}
+
+.botao-comprar {
+  background-color: rgb(0, 10, 103);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px 0;
+  font-family: 'Anton', sans-serif;
+}
+
+.botao-comprar:hover {
+  background-color: rgb(203, 0, 0);
+}
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-family: 'Anton', sans-serif;
+  transition: transform 0.3s;
+}
+
+.logo img {
+  height: 100px;
+  transition: transform 0.3s;
+  border-radius: 10px;
+
+
+}
+.logo:hover {
+  transform: scale(1.10);
+}
+.logo img:hover {
+  transform: scale(1.10);
+}
+.marcas {
+background-color: #000000;
+    margin: 90px;
+
+}
+
+.marcas img {
+  max-height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0px;
+
+}
+.marcas-grid {
+  width: 100%;
+  display: flex;
+  padding: 5px 20px;
+  justify-content: space-between;
+
+}
+.marcas img:hover {
+  transform: scale(1.05);
+
+}
